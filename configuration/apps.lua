@@ -12,15 +12,16 @@ return {
     rofi = rofi_command,
     lock = 'dm-tool lock',
     quake = 'termite',
-    screenshot = 'flameshot full -p ~/Pictures',
-    region_screenshot = 'flameshot gui -p ~/Pictures',
-    delayed_screenshot = 'flameshot full -p ~/Pictures -d 5000',
+    screenshot = filesystem.get_configuration_dir() .. '/configuration/utils/screenshot',
+    region_screenshot = filesystem.get_configuration_dir() .. '/configuration/utils/screenshot --sel',
+    delayed_screenshot = filesystem.get_configuration_dir() .. '/configuration/utils/screenshot --del',
     browser = 'google-chrome-stable',
     editor = 'gedit', -- gui text editor
     social = 'telegram-desktop',
     game = rofi_command,
     files = 'nemo',
-    music = rofi_command 
+    music = rofi_command,
+    sysMonitor = 'termite -e htop -t',
   },
   -- List of apps to start once on start-up
   run_on_start_up = {

@@ -36,9 +36,9 @@ local globalKeys =
   ),
   awful.key(
     {modkey},
-    'r',
+    's',
     function()
-      _G.screen.primary.left_panel:toggle(true)
+      _G.screen.primary.left_panel:toggle(false)
     end,
     {description = 'show main menu', group = 'awesome'}
   ),
@@ -304,7 +304,23 @@ local globalKeys =
     {},
     'XF86AudioNext',
     function()
-      --
+      awful.spawn('playerctl next')
+    end,
+    {description = 'toggle mute', group = 'hotkeys'}
+  ),
+  awful.key(
+    {},
+    'XF86AudioPrev',
+    function()
+      awful.spawn('playerctl prev')
+    end,
+    {description = 'toggle mute', group = 'hotkeys'}
+  ),
+  awful.key(
+    {},
+    'XF86AudioPlay',
+    function()
+      awful.spawn('playerctl play-pause')
     end,
     {description = 'toggle mute', group = 'hotkeys'}
   ),
@@ -368,7 +384,7 @@ local globalKeys =
     {modkey},
     'm',
     function()
-      awful.util.spawn_with_shell('mate-system-monitor')
+      awful.util.spawn_with_shell(apps.default.terminal .. ' -e bashtop')
     end
   ),
   -- Kill VLC

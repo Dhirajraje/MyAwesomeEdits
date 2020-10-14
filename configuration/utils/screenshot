@@ -1,3 +1,15 @@
-#!/bin/bash
-
-spectacle -b -n $@ -o ~/Pictures/Screenshot-$(date "+%Y.%m.%d-%H.%M.%S").png ; xclip -selection clipboard -target image/png -i ~/Pictures/Screenshot-$(date "+%Y.%m.%d-%H.%M.%S").png ; paplay /usr/share/sounds/freedesktop/stereo/camera-shutter.oga
+if [ $# != 0 ]
+then
+	if [ $1 == --sel ]
+	then
+		flameshot gui
+    elif [ $1 == --del ]
+	then
+		flameshot full -p ~/Pictures/Screenshots/ -d 5000
+	else
+		flameshot full -p ~/Pictures/Screenshots/
+	fi
+else
+	flameshot full -p ~/Pictures/Screenshots/
+fi
+paplay /usr/share/sounds/freedesktop/stereo/camera-shutter.oga
