@@ -36,7 +36,7 @@ local globalKeys =
   ),
   awful.key(
     {modkey},
-    's',
+    'r',
     function()
       _G.screen.primary.left_panel:toggle(false)
     end,
@@ -306,15 +306,15 @@ local globalKeys =
     function()
       awful.spawn('playerctl next')
     end,
-    {description = 'toggle mute', group = 'hotkeys'}
+    {description = 'play next', group = 'hotkeys'}
   ),
   awful.key(
     {},
     'XF86AudioPrev',
     function()
-      awful.spawn('playerctl prev')
+      awful.spawn('playerctl previous')
     end,
-    {description = 'toggle mute', group = 'hotkeys'}
+    {description = 'play previous', group = 'hotkeys'}
   ),
   awful.key(
     {},
@@ -322,7 +322,7 @@ local globalKeys =
     function()
       awful.spawn('playerctl play-pause')
     end,
-    {description = 'toggle mute', group = 'hotkeys'}
+    {description = 'play/pause', group = 'hotkeys'}
   ),
   awful.key(
     {},

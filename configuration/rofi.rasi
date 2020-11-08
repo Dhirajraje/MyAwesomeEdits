@@ -13,10 +13,10 @@ configuration {
 * {
 	background-color:            rgb(44, 44, 44);
 	text-color:                  #d3d7cf;
-	selbg:                       rgb(255, 87, 34);
+	selbg:                       rgb(158, 158, 158);
 	actbg:                       rgb(12, 12, 12);
-	urgbg:                       #e53935;
-	winbg:			     #FF7043;
+	urgbg:                       #9E9E9E;
+	winbg:			    		 #9E9E9E;
 
 	selected-normal-foreground:  @winbg;
 	normal-foreground:           @text-color;
@@ -84,7 +84,7 @@ listview {
 }
 
 element { 
-	padding: 14px;
+	padding: 12px;
 	border:  0 0 0 5px solid;
 }
 
@@ -93,7 +93,7 @@ entry {
 	text-color:     @normal-foreground;
 	background-color: rgb(86,86,86);
 	vertical-align: 1;
-	padding:        12px;
+	padding:        10px;
 	font:            "Roboto medium 13";
 }
 
