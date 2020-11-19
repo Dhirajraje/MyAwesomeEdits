@@ -31,7 +31,31 @@ awful.rules.rules = {
   },
   -- Titlebars
   {
-    rule_any = {type = {'dialog'}, class = {'Wicd-client.py', 'calendar.google.com'}},
+    rule_any = {
+      type = {'dialog', 'policykit-agent','policykit'},
+      class = {
+        'Wicd-client.py',
+        'calendar.google.com',
+        'Arandr',
+        'Blueman-manager',
+        'Gpick',
+        'Kruler',
+        'MessageWin',  -- kalarm.
+        'Sxiv',
+        'Tor Browser', -- Needs a fixed window size to avoid fingerprinting by screen size.
+        'Wpa_gui',
+        'veromix',
+        'xtightvncviewer',
+      },
+      name = {
+        "Event Tester",  -- xev.
+      },
+      role = {
+        "AlarmWindow",  -- Thunderbird's calendar.
+        "ConfigManager",  -- Thunderbird's about:config.
+        "pop-up",       -- e.g. Google Chrome's (detached) Developer Tools.
+      }
+    },
     properties = {
       placement = awful.placement.centered,
       ontop = true,

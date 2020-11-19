@@ -10,7 +10,7 @@ return {
   default = {
     terminal = 'termite',
     rofi = rofi_command,
-    lock = 'dm-tool lock',
+    lock = 'betterlockscreen -l',
     quake = 'termite',
     screenshot = filesystem.get_configuration_dir() .. '/configuration/utils/screenshot',
     region_screenshot = filesystem.get_configuration_dir() .. '/configuration/utils/screenshot --sel',
@@ -21,7 +21,7 @@ return {
     game = rofi_command,
     files = 'nemo',
     music = rofi_command,
-    sysMonitor = 'termite -e htop -t',
+    sysMonitor = 'termite -e bpytop',
   },
   -- List of apps to start once on start-up
   run_on_start_up = {

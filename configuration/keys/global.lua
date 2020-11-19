@@ -384,7 +384,7 @@ local globalKeys =
     {modkey},
     'm',
     function()
-      awful.util.spawn_with_shell(apps.default.terminal .. ' -e bashtop')
+      awful.util.spawn(apps.default.sysMonitor)
     end
   ),
   -- Kill VLC
