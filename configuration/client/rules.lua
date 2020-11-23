@@ -45,7 +45,12 @@ awful.rules.rules = {
         'Tor Browser', -- Needs a fixed window size to avoid fingerprinting by screen size.
         'Wpa_gui',
         'veromix',
-        'xtightvncviewer',
+        'Xtightvncviewer',
+        'xdman-Main',
+        'file_progress',
+        'file-roller',
+        'Lxappearance',
+        'Gcolor2'
       },
       name = {
         "Event Tester",  -- xev.
