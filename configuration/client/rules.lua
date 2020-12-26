@@ -40,7 +40,9 @@ awful.rules.rules = {
         'Blueman-manager',
         'Gpick',
         'Kruler',
-        'MessageWin',  -- kalarm.
+	'sun-awt-X11-XFramePeer',
+        'jetbrains-studio',
+	'MessageWin',  -- kalarm.
         'Sxiv',
         'Tor Browser', -- Needs a fixed window size to avoid fingerprinting by screen size.
         'Wpa_gui',
@@ -54,6 +56,8 @@ awful.rules.rules = {
       },
       name = {
         "Event Tester",  -- xev.
+	"GIMP Startup",
+	"vlc",
       },
       role = {
         "AlarmWindow",  -- Thunderbird's calendar.

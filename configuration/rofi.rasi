@@ -39,7 +39,7 @@ configuration {
 	hide-scrollbar:              "true";
 	margin:                      0px;
 	padding:                     0px;
-	font:            "Roboto medium 10";
+	font:            "Fira Code Retina 10";
 }
 
 window {
@@ -84,7 +84,7 @@ listview {
 }
 
 element { 
-	padding: 12px;
+	padding: 14px;
 	border:  0 0 0 5px solid;
 }
 
@@ -93,8 +93,8 @@ entry {
 	text-color:     @normal-foreground;
 	background-color: rgb(86,86,86);
 	vertical-align: 1;
-	padding:        10px;
-	font:            "Roboto medium 13";
+	padding:        12.8px;
+	font:            "Fira Code Retina 14";
 }
 
 element normal.normal {
