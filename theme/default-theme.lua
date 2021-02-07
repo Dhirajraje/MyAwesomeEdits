@@ -10,20 +10,20 @@ theme.font = 'Roboto medium 10'
 -- Colors Pallets
 
 -- Primary
-theme.primary = mat_colors.grey
+theme.primary = mat_colors.sweet_red
 
 -- Accent
 theme.accent = mat_colors.pink
 
 -- Background
-theme.background = mat_colors.grey
+theme.background = mat_colors.sweet_night
 
 local awesome_overrides =
   function(theme)
   theme.dir = os.getenv('HOME') .. '/.config/awesome/theme'
 
   theme.icons = theme.dir .. '/icons/'
-  theme.wallpaper = theme.dir .. '/wallpapers/background.jpg'
+  theme.wallpaper = theme.dir .. '/wallpapers/figmaPic.svg'
   --theme.wallpaper = '#e0e0e0'
   theme.font = 'Roboto medium 10'
   theme.title_font = 'Roboto medium 14'

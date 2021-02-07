@@ -8,10 +8,10 @@ local rofi_command = 'env /usr/bin/rofi -dpi ' .. get_dpi() .. ' -width ' .. wit
 return {
   -- List of apps to start by default on some actions
   default = {
-    terminal = 'termite',
+    terminal = 'kitty',
     rofi = rofi_command,
     lock = 'betterlockscreen -l',
-    quake = 'termite',
+    quake = 'kitty',
     screenshot = filesystem.get_configuration_dir() .. '/configuration/utils/screenshot',
     region_screenshot = filesystem.get_configuration_dir() .. '/configuration/utils/screenshot --sel',
     delayed_screenshot = filesystem.get_configuration_dir() .. '/configuration/utils/screenshot --del',
@@ -21,7 +21,7 @@ return {
     game = rofi_command,
     files = 'nemo',
     music = rofi_command,
-    sysMonitor = 'termite -e bpytop',
+    sysMonitor = 'kitty -e bashtop',
   },
   -- List of apps to start once on start-up
   run_on_start_up = {

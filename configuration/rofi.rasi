@@ -11,12 +11,12 @@ configuration {
 }
 
 * {
-	background-color:            rgb(44, 44, 44);
+	background-color:            #000612;
 	text-color:                  #d3d7cf;
-	selbg:                       rgb(158, 158, 158);
-	actbg:                       rgb(12, 12, 12);
-	urgbg:                       #9E9E9E;
-	winbg:			    		 #9E9E9E;
+	selbg:                       #FF2633;
+	actbg:                       #000207;
+	urgbg:                       #FF2633;
+	winbg:			    		 #f2f2f2;
 
 	selected-normal-foreground:  @winbg;
 	normal-foreground:           @text-color;
@@ -84,16 +84,16 @@ listview {
 }
 
 element { 
-	padding: 14px;
+	padding: 13px;
 	border:  0 0 0 5px solid;
 }
 
 entry {
 	expand:         true;
 	text-color:     @normal-foreground;
-	background-color: rgb(86,86,86);
+	background-color: #121214;
 	vertical-align: 1;
-	padding:        12.8px;
+	padding:        13px;
 	font:            "Fira Code Retina 14";
 }
 
